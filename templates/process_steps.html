@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+      <a href="/" class="w3-button w3-bar-item">Home</a>
+      <a href="/process_steps" class="w3-button w3-bar-item">Process</a>
+      <a href="/index2" class="w3-button w3-bar-item">Prototype</a>
+    </nav>
+
+    <h2>
+
+        Following are the steps udergone by a typical Image Recognition Model:-
+    </h2>
+
+    <h6>
+        <ol>
+            <li>Gather Dataset </li>
+            <li>Train a Model</li>
+            <li>Test the Model</li>
+            <li>Deploy the Model on Web</li>
+            <li>Feed it locally or remotely</li>
+        </ol>
+    </h6>
+    <section>
+        <center>
+
+      <img class="mySlides" src="static/slide_img/step 2.jpg" style="width:40%">
+      <img class="mySlides" src="static/slide_img/step 3.jpg" style="width:40%">
+      <img class="mySlides" src="static/slide_img/step4.jpg" style="width:40%">
+      <img class="mySlides" src="static/slide_img/process_img_1.jpg" style="width:40%">
+      <img class="mySlides" src="static/slide_img/process_img_2.jpg" style="width:40%">
+      <img class="mySlides" src="static/slide_img/process_img_3.jpg" style="width:40%">
+
+    </center>
+    </section>
+    <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 5000);
+    }
+    </script>
+    <section class="w3-container w3-center" style="max-width:600px">
+      <h2 class="w3-wide">Doc-AI</h2>
+      <p class="w3-opacity"><i>Image Classification & Recognition</i></p>
+    </section>
+
+
+    <section class="w3-container w3-content w3-center" style="max-width:600px">
+    <p class="w3-justify">
+        Docter-AI . A deep learning based
+        application for medical data diagnosis.Medical image classification using convolutional neural networks is the best way to reach the goal. Convolutional neural networks provide the highest accuracy while dealing with images.
+    We are going to use are computer vision library read and process the unstructured image data.
+    The goal is to work on labelled dataset for classifying image so that we can make the process faster and as much accurate as we can.</p>
+    </section>
+
+
+
+
+    <footer class="w3-container w3-padding-3px w3-center w3-black w3-tiny">
+
+        <h2> Technologies Used </h2>
+     <img src="static/slide_img/tensor.png" style="width:10%">
+     <img src="static/slide_img/download.png" style="width:7%">
+     <img src="static/slide_img/keras2.png" style="width:10%">
+     <img src="static/slide_img/numpy.png" style="width:10%">
+     <img src="static/slide_img/Open-CV.jpg" style="width:10%">
+   </footer>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+   </body>
+   </html>

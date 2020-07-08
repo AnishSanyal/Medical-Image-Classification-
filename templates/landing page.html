@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+
+<!-- Content will go here -->
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="/" class="w3-button w3-bar-item">Home</a>
+  <a href="/process_steps" class="w3-button w3-bar-item">Process</a>
+  <a href="/index2" class="w3-button w3-bar-item">Prototype</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+    <center>
+  <img class="mySlides" src="static/slide_img/slide_1.png" style="width:40%">
+  <img class="mySlides" src="static/slide_img/slide_2.png" style="width:50%">
+  <img class="mySlides" src="static/slide_img/slide_3.jpg" style="width:50%">
+  <img class="mySlides" src="static/slide_img/slide_4.png" style="width:50%">
+  <img class="mySlides" src="static/slide_img/slide_5.jpg" style="width:50%">
+</center>
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<section class="w3-container w3-center" style="max-width:600px">
+  <h2 class="w3-wide">Doc-AI</h2>
+  <p class="w3-opacity"><i>Image Classification & Recognition</i></p>
+</section>
+
+
+<section class="w3-container w3-content w3-center" style="max-width:600px">
+<p class="w3-justify">
+    Docter-AI . A deep learning based
+    application for medical data diagnosis.Medical image classification using convolutional neural networks is the best way to reach the goal. Convolutional neural networks provide the highest accuracy while dealing with images.
+We are going to use are computer vision library read and process the unstructured image data.
+The goal is to work on labelled dataset for classifying image so that we can make the process faster and as much accurate as we can.</p>
+</section>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Computer Vison</p>
+    <img src="static/slide_img/display_1.jpg" alt="Random Name" style="width:100%">
+  </article>
+  <article class="w3-third">
+    <p>Pattern Recognition</p>
+    <img src="static/slide_img/display_2.jpg" alt="Random Name" style="width:100%">
+  </article>
+  <article class="w3-third">
+    <p>Feature Extraction</p>
+    <img src="static/slide_img/display_3.png" alt="Random Name" style="width:100%">
+  </article>
+</section>
+
+
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+
+  <center><h3>Team behind this project</h3>
+
+  <h5>
+      <ul>
+      <li>Nandita Paul</li>
+      <li>Aniket Roy</li>
+      <li>Bir Bireshwar Bala</li>
+      <li>Anish Sanyal</li>
+    </ul>
+</h5>
+</center>
+</footer>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+
+
+</body>
+</html>
